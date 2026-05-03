@@ -17,7 +17,7 @@ contracts — that hijack AI systems processing them. LocalPromptShield scans ev
 chunk of every PDF through three detection layers before any AI model ever sees the
 content:
 
-1. **Regex Pre-filter** — 15 compiled patterns catch overt injections in under 1ms with zero VRAM
+1. **Regex Pre-filter** — 44 compiled patterns catch overt injections in under 1ms with zero VRAM
 2. **Sentry (Qwen 2.5 0.5B)** — fast syntactic scanner flags suspicious language
 3. **Auditor (llama3.2:3b)** — semantic judge with final verdict authority
 
