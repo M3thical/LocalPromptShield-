@@ -1,0 +1,16 @@
+# LocalPromptShield — Phase 4B: FastAPI Backend Dependencies
+# Includes all deps needed to run the full backend (pipeline + PDF extraction).
+# Install: pip install -r requirements_4b.txt
+
+# ── Phase 4A deps (pdf_extractor.py) ──────────────────────────────────────────
+-r requirements_pdf.txt
+
+# ── Pipeline deps (pipeline.py / test_pipeline_v3.py) ─────────────────────────
+langchain-ollama>=0.2.0   # Ollama LLM interface for Sentry + Auditor models
+
+# ── FastAPI backend ────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9   # Required for UploadFile / multipart form data
+requests>=2.31.0          # Used by tests/test_api.py
+pyyaml>=6.0               # Load regex_rules.yaml and fuzzy_phrases.yaml at runtime
