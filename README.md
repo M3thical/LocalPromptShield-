@@ -165,3 +165,11 @@ npm run dev
 ```
 
 Then open your browser at **http://localhost:5173**
+
+
+
+## Attribution & Collaboration
+
+This project was developed as part of the **CYSC 4500 Capstone** at the **Inter-American University of Puerto Rico, Bayamón Campus**.
+* **Daniel Sánchez** - responsible for architecture design, security implementation, and core script development.
+* **Claude (Anthropic AI)** — Served as a coding partner for regex pattern optimization and logic refinement of the multi-layered detection pipeline.
