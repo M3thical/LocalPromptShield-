@@ -41,7 +41,7 @@ PDF Input → [pdf_extractor.py] → Plain Text
                           CHUNK_MAX_CHARS=2000, SENTENCE_OVERLAP=50
                                       ↓ (per chunk — ALL chunks always scanned)
                               [regex_scan()]         <1ms, zero VRAM
-                               15 compiled IPI patterns
+                               44 compiled IPI patterns
                                Match → BLOCKED (Sentry+Auditor skipped)
                                       ↓ (if no regex match)
                               [Sentry — Qwen 2.5 0.5B]
